@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Roboto Light";
+    src: url("./assets/fonts/Roboto/Roboto-Light.ttf");
+}
+@font-face {
+    font-family: "Railway Regular";
+    src: url("./assets/fonts/Raleway/Raleway-Black.ttf");
+}
+@font-face {
+    font-family: "Railway semibold";
+    src: url("./assets/fonts/Raleway/Raleway-SemiBold.ttf");
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    background: url(assets/Desktop\ -\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container{
+    display: flex;
+}
+.img-1{
+    height: 578px;
+    width: 646px;
+    margin-top: 61px;
+    margin-left: 645px;
+
+}
+.line{
+    margin-top: 100px;
+    margin-left: 168px;
+    position: relative;
+}
+h2{
+    width: 231px;
+    height: 10px;
+    font-family: 'Roboto Light';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+}
+h1{
+    
+    font-size: 104px;
+    font-family: 'Railway semibold';
+    font-weight: 600;
+    /* line-height: 122px; */
+    
+}
+button{
+    position: absolute;
+    top: 270px;
+    width: 179px;
+    height: 48px;
+    color: white;
+    background-color: #00ACF1;
+    font-family: 'Railway-Regular';
+    border-radius: 8px;
+    border-style: hidden;
+}
+#curved-text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#curved-text-container > svg{
+    animation: rotating-text 15s infinite linear reverse;
+}
+#curved-text-items{
+    font-size: 5px;
+    word-spacing: 10px;
+    font-family: 'Roboto Light';
+}
+
+@keyframes rotating-text {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.line > h2{
+    animation: fade-down-h2 10s infinite ease-in-out;
+}
+.line > h1{
+    animation: fade-down-h1 10s infinite ease-in-out ;
+}
+.line > button{
+    animation: fade-down-btn 10s infinite ease-in-out;
+}
+
+.img-1{
+    animation: fade-right 10s infinite ease-in-out 1s;
+}
+
+@keyframes fade-down-h2 {
+    10% {opacity: 100%; transform: translateY(0%)}
+    20% {opacity: 0%; transform: translateY(1000%)}
+    70% {opacity: 0%; transform: translateY(1000%)}
+    80% {opacity: 100%; transform: translateY(0%)}
+}
+@keyframes fade-down-h1 {
+    5% {opacity: 100%; transform: translateY(0%)}
+    15% {opacity: 0%; transform: translateY(100%)}
+    75% {opacity: 0%; transform: translateY(100%)}
+    85% {opacity: 100%; transform: translateY(0%)}
+}
+@keyframes fade-down-btn {
+    0% {opacity: 100%; transform: translateY(0%)}
+    10% {opacity: 0%; transform: translateY(100%)}
+    80% {opacity: 0%; transform: translateY(100%)}
+    90% {opacity: 100%; transform: translateY(0%)}
+}
+@keyframes fade-right {
+    0% {opacity: 100%; transform: translateX(0%)}
+    10% {opacity: 0%; transform: translateX(200%)}
+    70% {opacity: 0%; transform: translateX(200%)}
+    80% {opacity: 100%; transform: translateX(0%)}
+}

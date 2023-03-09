@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assignment.css">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="line">
+            <h2>Become A </h2>
+            <h1>JS Ninja</h1>
+            <button>Kill the Web</button>
+        </div>
+        <div>
+            <img class="img-1" src="assets/hero-image.png" alt="">
+        </div>
+    </div>
+
+    <div id="curved-text-container">
+        <svg viewBox="0 0 200 200" height="1500" width="1500">
+            <path id="curve" d="
+            M 100, 100
+            m -75, 0
+            a 75,75 0 1,1 150,0
+            a 75,75 0 1,1 -150,0
+            " fill="none" />
+            <text>
+                <textPath xlink:href="#curve" id="curved-text-items">
+                    React Node CSS Next Express Nest HTML GSAP 3.JS SASS
+                </textPath>
+            </text>
+        </svg>
+    </div>
+</body>
+
+</html>
